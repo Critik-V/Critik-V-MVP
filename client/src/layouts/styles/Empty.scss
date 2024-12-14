@@ -1,0 +1,46 @@
+@import "@sass/main";
+
+#empty {
+  height: 80dvh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+
+  & img {
+    width: 50%;
+    max-width: 300px;
+  }
+
+  &-title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 900;
+    color: $primary-grey;
+  }
+
+  &-message {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: $primary-grey;
+  }
+}
+
+.make-post-btn {
+  i {
+    margin-right: 0.5rem;
+  }
+  margin-top: 1rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 5px;
+  border: 0;
+  background-color: $primary-green;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  @include btn-effect;
+}
