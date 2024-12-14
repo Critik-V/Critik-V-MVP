@@ -11,7 +11,7 @@ run-client:
     cd client && pnpm run start
 
 run-pdf-service:
-    cd pdf-service && go run main.go
+    cd service-pdf && go run main.go
 
 # DATABASE
 run-db:
@@ -28,7 +28,7 @@ test-server:
     cd server && pnpm run test
 
 test-pdf-service:
-    cd pdf-service && go test ./...
+    cd service-pdf && go test ./...
 
 # lint
 lint-client:

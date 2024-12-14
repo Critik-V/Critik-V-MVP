@@ -28,7 +28,7 @@
             echo "installing dependencies..."
             (cd "$PWD/client" && pnpm install --silent) &
             (cd "$PWD/server" && pnpm install --silent) &
-            (cd "$PWD/pdf-service" && go mod download) &
+            (cd "$PWD/service-pdf" && go mod download) &
             wait
             echo "🌐 Critik-V Development Environment"
           '';
