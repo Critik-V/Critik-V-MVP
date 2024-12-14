@@ -1,0 +1,3 @@
+server: just run-server
+client: just run-client
+pdf-service: just run-pdf-service
