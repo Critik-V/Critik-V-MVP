@@ -28,10 +28,7 @@ app.use(morgan(env.ENV === 'production' ? 'combined' : 'dev'));
 app.use(helmet());
 
 // serve static files
-app.use(
-	apiRoutePrefix('resumes'),
-	express.static(env.STATIC_FILES_PATH || 'public')
-);
+app.use(apiRoutePrefix('resumes'), express.static(`${env.IMAGE_STORAGE_PATH}`));
 
 // session and passport middleware
 app.use(appSession);
