@@ -12,7 +12,6 @@
       let
         pkgs = import nixpkgs { inherit system; };
       in {
-
         # Shell de développement global
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
@@ -31,6 +30,14 @@
             (cd "$PWD/service-pdf" && go mod download) &
             wait
             echo "🌐 Critik-V Development Environment"
+            echo "
+           _ _   _ _                    
+  ___ _ __(_) |_(_) | __         __   __
+ / __| '__| | __| | |/ /  _____  \ \ / /
+| (__| |  | | |_| |   <  |_____|  \ V / 
+ \___|_|  |_|\__|_|_|\_\           \_/  
+ 
+ "
           '';
         };
       }
